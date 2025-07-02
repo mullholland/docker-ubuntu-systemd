@@ -18,12 +18,6 @@ jobs:
     strategy:
       matrix:
         include:
-          - context: 2004
-            tags: |
-              ${{ github.repository }}:2004
-              ghcr.io/${{ github.repository }}:2004
-              ${{ github.repository }}:focal
-              ghcr.io/${{ github.repository }}:focal
           - context: 2204
             tags: |
               ${{ github.repository }}:2204
