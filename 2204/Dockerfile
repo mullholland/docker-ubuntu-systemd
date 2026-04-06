@@ -5,7 +5,7 @@ LABEL build_date="2026-04-05"
 
 ARG DEBIAN_FRONTEND=noninteractive
 
-ENV container docker
+ENV container=docker
 
 # Enable apt repositories.
 RUN sed -i 's/# deb/deb/g' /etc/apt/sources.list
@@ -32,9 +32,10 @@ RUN apt-get update \
     && apt-get dist-upgrade -y \
     && apt-get install -y \
     python3 \
+    python3-apt \
+    python3-pip \
     sudo \
     gnupg \
-    python3-apt \
     apt-transport-https \
     ca-certificates \
     && apt-get clean
