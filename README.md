@@ -11,7 +11,8 @@ This repository has multiple tags that relate to Ubuntu versions.
 |Ubuntu Version|Docker image tag|
 |------------------|--------------------|
 |22.04 (jammy)     |2204, jammy         |
-|24.04 (noble)     |2404, noble, latest |
+|24.04 (noble)     |2404, noble         |
+|26.04 (resolute)  |2604, resolute, latest |
 
 Manually starting
 -----------------

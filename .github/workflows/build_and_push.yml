@@ -30,6 +30,12 @@ jobs:
               ghcr.io/${{ github.repository }}:2404
               ${{ github.repository }}:noble
               ghcr.io/${{ github.repository }}:noble
+          - context: 2604
+            tags: |
+              ${{ github.repository }}:2604
+              ghcr.io/${{ github.repository }}:2604
+              ${{ github.repository }}:resolute
+              ghcr.io/${{ github.repository }}:resolute
               ${{ github.repository }}:latest
               ghcr.io/${{ github.repository }}:latest
 
