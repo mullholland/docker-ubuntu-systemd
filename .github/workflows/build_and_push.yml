@@ -18,7 +18,7 @@ jobs:
       matrix:
         context: [2204, 2404, 2604]
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - name: Build image
         run: docker build -t smoke-test:${{ matrix.context }} ./${{ matrix.context }}
       - name: Boot container like Molecule's docker driver
@@ -82,7 +82,7 @@ jobs:
               ghcr.io/${{ github.repository }}:latest
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - uses: docker/setup-qemu-action@v4
       - uses: docker/setup-buildx-action@v4
 
