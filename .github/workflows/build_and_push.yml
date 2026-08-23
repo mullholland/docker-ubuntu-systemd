@@ -23,7 +23,7 @@ jobs:
         run: docker build -t smoke-test:${{ matrix.context }} ./${{ matrix.context }}
       - name: Boot container like Molecule's docker driver
         run: |
-          docker run -d --name smoke --privileged --tty \
+          docker run -d --name smoke --privileged --cgroupns=host --tty \
             --volume /sys/fs/cgroup:/sys/fs/cgroup:rw \
             smoke-test:${{ matrix.context }}
       - name: Wait for systemd to become ready
