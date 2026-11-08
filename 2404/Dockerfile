@@ -1,7 +1,7 @@
 FROM ubuntu:24.04
 
 LABEL maintainer="mullholland"
-LABEL build_date="2026-08-23"
+LABEL build_date="2026-11-08"
 
 ARG DEBIAN_FRONTEND=noninteractive
 
